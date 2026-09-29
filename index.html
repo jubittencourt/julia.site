@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Julia Felizardo — Desenvolvedora Back-End & UI/UX</title>
+  
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Ícones Phosphor Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background decorativo com efeito de gradiente/blur -->
+  <div class="glow-bg glow-1"></div>
+  <div class="glow-bg glow-2"></div>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">julia<span class="highlight">.dev</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contato" class="btn btn-primary btn-sm">Fale Comigo</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Hero -->
+    <section class="hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="badge-status">
+            <span class="status-pulse"></span>
+            Disponível para novos projetos & contratos
+          </div>
+
+          <h1 class="hero-title">
+            Transformando ideias em <span class="gradient-text">experiências digitais</span> de alto impacto.
+          </h1>
+
+          <p class="hero-description">
+            Olá! Sou a <strong>Julia Felizardo</strong>, Sou um desenvolvedor backend focado em transformar regras de negócio complexas em códigos eficientes, priorizando a segurança dos dados e a integridade do sistema.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projetos" class="btn btn-primary">
+              Ver Projetos
+              <i class="ph-bold ph-arrow-right"></i>
+            </a>
+            <a href="#contato" class="btn btn-secondary">
+              <i class="ph ph-chat-circle-dots"></i>
+              Iniciar Conversa
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <span class="social-label">Me encontre em:</span>
+            <div class="social-icons">
+              <a href="https://github.com/jubittencourt" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+                <i class="ph ph-github-logo"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/juliafelizardo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+                <i class="ph ph-linkedin-logo"></i>
+              </a>
+              <a href="mailto:juliabittencourt160@gmail.com" aria-label="Email" class="social-icon">
+                <i class="ph ph-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="card-avatar-wrapper">
+            <div class="avatar-card">
+              <div class="avatar-header">
+                <div class="terminal-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="avatar-header-title">developer-profile.tsx</span>
+              </div>
+              
+              <div class="avatar-inner">
+                <div class="avatar-circle">
+                  <!-- Avatar com iniciais ou imagem -->
+                  <div class="avatar-placeholder">JF</div>
+                </div>
+
+                <div class="avatar-info">
+                  <h3 class="avatar-name">Julia Felizardo</h3>
+                  <p class="avatar-role">Backend Developer</p>
+                </div>
+
+                <div class="mini-code-box">
+                  <code>
+                    <span class="code-kw">const</span> <span class="code-var">skills</span> = [<span class="code-str">'Python'</span>, <span class="code-str">'Java'</span>, <span class="code-str">'C#'</span>, <span class="code-str">'HTML'</span>, <span class="code-str">'CSS'</span>];<br>
+                    <span class="code-kw">const</span> <span class="code-var">passion</span> = <span class="code-str">'tranformar problemas em soluções'</span>;
+                  </code>
+                </div>
+              </div>
+            </div>
+
+            <!-- Badges Flutuantes -->
+            <div class="floating-badge badge-top">
+              <i class="ph-bold ph-sparkle"></i>
+              <span>Estudante em desenvolvimento</span>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <i class="ph-bold ph-check-circle"></i>
+              <span>100% Código Limpo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section class="section about-section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Conheça-me</span>
+          <h2 class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">Apaixonada por tecnologia, desenvolvimento de software e pelo desafio de transformar ideias em soluções.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              Sou estudante de Engenharia de Software e desenvolvedora em formação, com foco no desenvolvimento Back-End. Comecei minha jornada na programação durante o ensino médio e, desde então, venho construindo meus conhecimentos por meio de cursos, projetos acadêmicos, desafios práticos e experiências como a 42 São Paulo.
+            </p>
+            <p>
+              Acredito que um bom produto digital deve ser rápido, acessível para todos os públicos e visualmente memorável. No meu dia a dia, busco constantemente aprender novas tecnologias e resolver problemas reais com soluções elegantes.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">+10</span>
+                <span class="stat-label">Projetos Concluídos</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">+2</span>
+                <span class="stat-label">Anos estudando programação</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Dedicação & Qualidade</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="ph ph-browsers"></i>
+              </div>
+              <div>
+                <h3>Desenvolvimento Back-End</h3>
+                <p>Estudos em lógica de programação, orientação a objetos e desenvolvimento de aplicações com Java, Python e C#.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="ph ph-database"></i>
+              </div>
+              <div>
+                <h3>Banco de Dados & APIs</h3>
+                <p>Conhecimentos em SQL, modelagem de dados e desenvolvimento de aplicações com integração a bancos de dados..</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="ph ph-paint-brush-broad"></i>
+              </div>
+              <div>
+                <h3>Projetos & Aprendizado</h3>
+                <p>Desenvolvimento de projetos acadêmicos e colaborativos, aplicando conhecimentos em programação e explorando novas tecnologias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="section skills-section" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tecnologias</span>
+          <h2 class="section-title">Minhas Habilidades</h2>
+          <p class="section-subtitle">Tecnologias e ferramentas que venho explorando e aplicando em meus estudos e projetos de desenvolvimento.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Categoria Linguagens -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <i class="ph ph-desktop"></i>
+              <h3>Linguagens de Programação</h3>
+            </div>
+            <div class="tags-list"> 
+              <span class="tech-tag"> 
+                <i class="ph ph-coffee"></i> Java 
+              </span> <span class="tech-tag"> 
+                <i class="ph ph-terminal"></i> Python </span> 
+                <span class="tech-tag"> 
+                  <i class="ph ph-hash"></i> C# </span> 
+                  <span class="tech-tag"> 
+                    <i class="ph ph-file-html"></i> HTML5 </span>
+                   <span class="tech-tag"> 
+                    <i class="ph ph-file-css"></i> CSS3 </span> 
+                    <span class="tech-tag"> 
+                      <i class="ph ph-brackets-curly"></i> JavaScript </span> 
+                    </div> 
+                  </div>
+
+         <!-- Categoria Banco de Dados e APIs --> 
+          <div class="skill-category-card"> 
+            <div class="skill-cat-header"> 
+              <i class="ph ph-database"></i> 
+              <h3>Banco de Dados & APIs</h3> 
+            </div> 
+            <div class="tags-list"> 
+              <span class="tech-tag"> 
+                <i class="ph ph-database"></i> MySQL
+               </span> <span class="tech-tag"> 
+                <i class="ph ph-leaf"></i> MongoDB 
+              </span> <span class="tech-tag"> 
+                <i class="ph ph-cloud"></i> APIs REST </span> 
+                <span class="tech-tag"> 
+                  <i class="ph ph-brackets-curly"></i> Swagger </span> 
+                  <span class="tech-tag"> 
+                    <i class="ph ph-shield-check"></i> Segurança de APIs </span> 
+                  </div> 
+                </div>
+
+         <!-- Categoria Ferramentas --> 
+          <div class="skill-category-card"> 
+            <div class="skill-cat-header"> 
+              <i class="ph ph-wrench"></i> 
+              <h3>Ferramentas & Tecnologias</h3> 
+            </div> 
+            <div class="tags-list"> 
+              <span class="tech-tag"> 
+                <i class="ph ph-git-branch"></i> Git </span>
+                 <span class="tech-tag"> 
+                  <i class="ph ph-github-logo"></i> GitHub </span> 
+                  <span class="tech-tag"> 
+                    <i class="ph ph-code"></i> VS Code </span> 
+                    <span class="tech-tag"> 
+                      <i class="ph ph-cloud"></i> AWS </span> 
+                      <span class="tech-tag">
+                        <i class="ph ph-terminal"></i> Linux
+                       </span> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </section>
+
+    <!-- Seção Projetos -->
+    <section class="section projects-section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfólio</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">Alguns dos principais trabalhos que desenvolvi recentemente.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+<article class="project-card">
+  <div class="project-banner banner-1">
+    <div class="banner-overlay">
+      <span class="badge-featured">Projeto Colaborativo</span>
+    </div>
+    <div class="project-mockup-graphic">
+      <i class="ph ph-code"></i>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="project-techs">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Git</span>
+    </div>
+
+    <h3 class="project-title">
+      Discovery — 42 São Paulo
+    </h3>
+
+    <p class="project-desc">
+      Projeto desenvolvido em colaboração com um colega durante a
+      Discovery da 42 São Paulo, com foco no aprendizado de
+      desenvolvimento web e na aplicação prática de HTML, CSS e
+      JavaScript, além do trabalho em equipe e da resolução de problemas.
+    </p>
+
+    <div class="project-footer">
+      <a
+        href="https://github.com/jubittencourt/Discovery"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link"
+        aria-label="Ver repositório Discovery no GitHub"
+      >
+        Ver no GitHub
+        <i class="ph-bold ph-arrow-up-right"></i>
+      </a>
+
+      <a
+        href="https://github.com/jubittencourt/Discovery"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-icon-link"
+        aria-label="Acessar repositório no GitHub"
+      >
+        <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+  </div>
+</article>
+         
+<!-- Projeto 2 -->
+<article class="project-card">
+  <div class="project-banner banner-2">
+    <div class="banner-overlay">
+      <span class="badge-featured">Projeto de Estudos</span>
+    </div>
+    <div class="project-mockup-graphic">
+      <i class="ph ph-code"></i>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <div class="project-techs">
+      <span>Programação</span>
+      <span>Java</span>
+      <span>Git</span>
+    </div>
+
+    <h3 class="project-title">
+      UAM — Projeto Pix
+    </h3>
+
+    <p class="project-desc">
+      Sistema desenvolvido como projeto acadêmico para simular operações básicas de um sistema de pagamentos via Pix.
+O projeto foi desenvolvido em equipe, com o objetivo de aplicar na prática conceitos de desenvolvimento Back-End, organização de código, APIs REST, persistência de dados e integração com banco de dados.
+    </p>
+
+    <div class="project-footer">
+      <a
+        href="https://github.com/jubittencourt/projeto-pix.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-link"
+        aria-label="Ver repositório ProjetoPix no GitHub"
+      >
+        Ver no GitHub
+        <i class="ph-bold ph-arrow-up-right"></i>
+      </a>
+
+      <a
+        href="https://github.com/jubittencourt/projeto-pix.git"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project-icon-link"
+        aria-label="Acessar repositório no GitHub"
+      >
+        <i class="ph ph-github-logo"></i>
+      </a>
+    </div>
+  </div>
+</article>
+          <!-- Projeto 3 -->
+          <article class="project-card">
+            <div class="project-banner banner-3">
+              <div class="banner-overlay">
+                <span class="badge-featured">Projeto academico</span>
+              </div>
+              <div class="project-mockup-graphic">
+                <i class="ph ph-kanban"></i>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Proximo Projeto</h3>
+              <p class="project-desc">
+                Em breve, estarei compartilhando mais detalhes sobre meu proximo projeto, que será focado em desenvolvimento Back-End e integração de sistemas.
+              </p>
+              <div class="project-footer">
+                <a href="#" class="project-link" aria-label="Ver demo FocusFlow">
+                  Demo Ao Vivo <i class="ph-bold ph-arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/jubittencourt/projeto-pix.git" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Ver repositório no GitHub">
+                  <i class="ph ph-github-logo"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-card-container">
+          <div class="contact-header-block">
+            <span class="section-tag">Vamos Conversar</span>
+            <h2 class="section-title">Tem um projeto em mente?</h2>
+            <p class="section-subtitle">
+              Estou disponível para novas oportunidades, projetos freelance e desafios técnicos. Fique à vontade para mandar uma mensagem!
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <!-- Informações diretas -->
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-linkedin-logo"></i>
+                </div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/juliafelizardo/" target="_blank" rel="noopener noreferrer">in/juliafelizardo</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-github-logo"></i>
+                </div>
+                <div>
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/jubittencourt" target="_blank" rel="noopener noreferrer">github.com/jubittencourt</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:juliabittencourt1@outlook.com.br">juliabittencourt1@outlook.com.br</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="ph ph-map-pin"></i>
+                </div>
+                <div>
+                  <h4>Localização</h4>
+                  <span>Brasil (Remoto / Presencial)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Formulário de Contato -->
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Obrigado pelo contato! Esta é uma demonstração.');">
+              <div class="form-group">
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Lucas Ferreira" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Seu E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Ex: lucas@exemplo.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-me um pouco sobre seu projeto ou ideia..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Enviar Mensagem
+                <i class="ph-bold ph-paper-plane-tilt"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#inicio" class="nav-logo">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span class="logo-text">julia<span class="highlight">.dev</span></span>
+        </a>
+        <p class="footer-copy">© 2026 Julia Felizardo. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+
+      <div class="footer-back-to-top">
+        <a href="#inicio" class="btn-top" aria-label="Voltar ao topo">
+          <i class="ph-bold ph-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile interativo
+    const toggleBtn = document.getElementById('mobile-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+
+      // Fechar menu ao clicar em links
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+    }
+
+    // Scroll suave & navbar ativa
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
