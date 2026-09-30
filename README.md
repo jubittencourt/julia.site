@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://jubittencourt.github.io/julia.site/">🌐 Acessar meu portfólio</a>
+  <a href="https://jubittencourt.github.io/julia.dev/">🌐 Acessar meu portfólio</a>
 </p>
 
 ---
