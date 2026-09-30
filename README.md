@@ -102,7 +102,7 @@ Este portfólio tem como objetivos:
 Se quiser conhecer meu trabalho ou entrar em contato comigo, acesse meu portfólio:
 
 🌐 **Portfólio:**
-https://jubittencourt.github.io/julia.site/
+https://jubittencourt.github.io/julia.dev/
 
 💻 **GitHub:**
 https://github.com/jubittencourt
